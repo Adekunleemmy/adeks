@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Lucida Sans';
+    src: url('/public/font/Lucida\ Sans\ Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+@font-face {
+    font-family: 'Lucida Sans';
+    src: url('/public/font/lucidasansdemibold.ttf') format('opentype');
+    font-weight: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fdfafa;
+}
+
+.turn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fecaca;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 7px;
+    animation: turn 6s linear infinite;
+}
+.t1 {right: 40px;bottom: 40px;}
+.t2 {top: 90px;left: 40px;}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+input[type="checkbox"] {
+    margin-left: 30px;
+    position: relative;
+    width: 50px;
+    height: 26px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input[type="checkbox"]::before {
+    content: "light";
+    color: white;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FF8989;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "dark";
+    transform: translateX(100%);
+    background: #FF8989;
+}
+
+input[type="checkbox"]:checked {
+    content: "dark";
+    background: #000;
+}
