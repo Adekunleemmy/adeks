@@ -254,7 +254,7 @@ h3 {
 .tools {
     width: 100%;
     padding: 70px 10%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 25)), url(/img/tools-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 25)), url(img/tools-bg.jpg);
     color: white;
 }
 .tools h4{
@@ -298,13 +298,13 @@ h3 {
     width: 100%;
 }
 .p-1 {
-    background-image: url(/img/superhero.PNG);
+    background-image: url(img/superhero.PNG);
 }
 .p-2 {
-    background-image: url(/img/citi.PNG);
+    background-image: url(img/citi.PNG);
 }
 .p-3 {
-    background-image: url(/img/dd.PNG);
+    background-image: url(img/dd.PNG);
 }
 .project-des {
     padding: 0 50px;
